@@ -1,10 +1,10 @@
 # [unrated] a와 b 출력하기 - 181951 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181951) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181951?language=python3) 
 
 ### 성능 요약
 
-메모리: 7.61 MB, 시간: 19.70 ms
+메모리: 7.38 MB, 시간: 15.86 ms
 
 ### 구분
 
