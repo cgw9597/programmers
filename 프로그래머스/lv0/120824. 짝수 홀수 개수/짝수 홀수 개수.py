@@ -1,10 +1,5 @@
 def solution(num_list):
-    x=[]
-    y=[]
+    answer = [0,0]
     for i in num_list:
-        if i%2==0:
-            x.append(i)
-        else:
-            y.append(i)
-        answer = (len(x),len(y))
+        answer[i%2]+=1
     return answer
