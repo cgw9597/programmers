@@ -1,4 +1,10 @@
+
+
 def solution(s1, s2):
-    same = list(set(s1)&set(s2))
-    answer = len(same)
+    answer = 0
+
+    for i in s1:
+        if i in s2:
+            answer += 1
+
     return answer
