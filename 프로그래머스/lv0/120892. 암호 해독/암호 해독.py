@@ -4,3 +4,7 @@ def solution(cipher, code):
         if i%code == 0:
             answer += cipher[i-1]
     return answer
+
+# def solution(cipher, code):
+#     answer = cipher[code-1::code]
+#     return answer
