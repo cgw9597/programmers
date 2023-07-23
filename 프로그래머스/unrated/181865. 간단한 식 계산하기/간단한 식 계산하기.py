@@ -1,10 +1,12 @@
 def solution(binomial):
     answer = 0
-    sp_bin = ''.join(binomial).split(' ')
-    if sp_bin[1] == "+":
-        answer = int(sp_bin[0]) + int(sp_bin[2])
-    elif sp_bin[1] == "*":
-        answer = int(sp_bin[0]) * int(sp_bin[2])
+    a, op, b = binomial.split()
+    a = int(a)
+    b = int(b)
+    if op == '+':
+        answer = a+b
+    elif op == '-':
+        answer = a-b
     else:
-        answer = int(sp_bin[0]) - int(sp_bin[2])
+        answer = a*b
     return answer
