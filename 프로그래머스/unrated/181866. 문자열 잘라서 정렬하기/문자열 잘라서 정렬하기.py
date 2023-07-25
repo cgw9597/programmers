@@ -1,8 +1,8 @@
 def solution(myString):
-    answer = []
-    my_string = ''.join(myString).split('x')
-    for i in my_string:
-        if i != "":
-            answer.append(i)
-    answer.sort()
+    my_string = ' '.join(myString.split('x')).split()
+    answer = sorted(my_string)
     return answer
+
+# def solution(myString):
+#     answer = ' '.join(myString.split('x')).split()
+#     return sorted(answer)
