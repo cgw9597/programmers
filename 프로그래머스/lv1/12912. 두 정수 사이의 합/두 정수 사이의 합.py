@@ -1,5 +1,5 @@
 def solution(a, b):
-    answer = 0
-    for i in range(min(a,b), max(a,b)+1):
-        answer += i
+    if a>b:
+        a, b = b, a
+    answer = sum(range(a, b+1))
     return answer
