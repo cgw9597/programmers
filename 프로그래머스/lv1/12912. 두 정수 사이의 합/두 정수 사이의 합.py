@@ -1,5 +1,3 @@
 def solution(a, b):
-    if a>b:
-        a, b = b, a
-    answer = sum(range(a, b+1))
+    answer = (abs(a-b)+1)*(a+b)//2
     return answer
