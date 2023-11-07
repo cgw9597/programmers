@@ -1,8 +1,8 @@
+from collections import deque
 def solution(A, B):
-    if A==B:
-        return 0
-    for i in range(1, len(A)):
-        A = A[-1]+A[0:-1]
-        if A == B:
-            return i  
+    a, b = deque(A), deque(B)
+    for cnt in range(0, len(A)):
+        if a == b:
+            return cnt
+        a.rotate(1)
     return -1
